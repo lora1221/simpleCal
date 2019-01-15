@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May tinh don gian</title>
+</head>
+<body>
+<form id="frmCalculator" name="calculator">
+    <fieldset>
+        <legend></legend>
+        <input type="text" id="txtExpression" name="exp"><br>
+        <button type="button" value="1" onclick="calculator.exp.value += '1';">1</button>
+        <button type="button" value="2" onclick="calculator.exp.value += '2';">2</button>
+        <button type="button" value="3" onclick="calculator.exp.value += '3';">3</button>
+        <button type="button" value="+" onclick="calculator.exp.value += '+';">+</button><br>
+
+        <button type="button" value="4" onclick="calculator.exp.value += '4';">4</button>
+        <button type="button" value="5" onclick="calculator.exp.value += '5';">5</button>
+        <button type="button" value="6" onclick="calculator.exp.value += '6';">6</button>
+        <button type="button" value="-" onclick="calculator.exp.value += '-';">-</button><br>
+
+        <button type="button" value="7" onclick="calculator.exp.value += '7';">7</button>
+        <button type="button" value="8" onclick="calculator.exp.value += '8';">8</button>
+        <button type="button" value="9" onclick="calculator.exp.value += '9';">9</button>
+        <button type="button" value="*" onclick="calculator.exp.value += '*';">*</button><br>
+
+        <button type="button" value="C" onclick="calculator.exp.value = null;">C</button>
+        <button type="button" value="0" onclick="calculator.exp.value += '0';">0</button>
+        <button type="button" value="=" onclick="calculator.exp.value=eval(calculator.exp.value);">=</button>
+        <button type="button" value="/" onclick="calculator.exp.value += '/';">/</button>
+    </fieldset>
+</form>
+</body>
+</html>
